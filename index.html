@@ -14,7 +14,63 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script type="text/babel">
-      const App = () => <div>this is our first attemp at react</div>;
+      const App = () => (<body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/about_me'>About Me</a></li>
+        <li><a href='/blog'>Blog</a></li>
+        </ul>
+    </nav>
+    <header>
+      <h1>Sally Student</h1>
+    </header>
+      <main>
+        <section className='skills'>
+          <header>
+            <h2>Skills</h2>
+          </header>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+          </ul>
+        </section>
+        <section className='employment'>
+          <header>
+            <h2>Employment History</h2>
+          </header>
+          <h3>Dolor Sit</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Risus Commodo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Lobortis elementum nibh tellus molestie nunc. Nisl suscipit adipiscing bibendum est ultricies integer quis. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Tincidunt arcu non sodales neque sodales ut etiam. Quis lectus nulla at volutpat diam ut venenatis. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Lacus laoreet non curabitur gravida arcu ac tortor. Sit amet est placerat in egestas erat imperdiet. Interdum velit laoreet id donec ultrices tincidunt arcu non. Orci a scelerisque purus semper. Nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla.</p>
+        </section>
+        <section className='education'>
+          <header>
+            <h2>Education</h2>
+          </header>
+          <ul>
+            <li>Snow College, AS</li>
+            <li>Thinkful, Engineering Immersion</li>
+          </ul>
+        </section>
+        <section className='contacMe'>
+          <header>
+            <h2>Contact Me</h2>
+          </header>
+          <div> <img src="sallyStudent.jpg" alt="Sally Student" width="200"/> </div>
+          <address>Sally Student<br />
+          Email: <a href="mailto:sallystudent@mailinator.com?Subject=Hello">SallyStudent@mailinator.com</a><br />
+          Cell: (801) 555-5565<br />
+          Twitter: <a href="https://twitter.com/SallyStudent">@SallyStudent</a><br />
+          </address>
+        </section>
+        <footer>
+          © 2017 Sally A. Student
+        </footer>
+      </main>
+  </body>);
 
       const appRoot = document.querySelector("#application-root");
       ReactDOM.render(<App />, appRoot);
